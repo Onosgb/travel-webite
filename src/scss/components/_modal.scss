@@ -1,0 +1,16 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.modal {
+  @include mixins.position(fixed, 0, 0, 0, 0, 100%, 100%);
+  @include mixins.align(flex, center, center, auto);
+  background: rgb(0, 0, 0, 0.4);
+
+  &__body {
+    background: variables.$white;
+    width: 38rem;
+    height: auto;
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+}

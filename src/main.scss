@@ -1,7 +1,10 @@
 @use "scss/base/base";
 
 // import utils
-@use 'scss/utils/utils';
+@use "scss/utils/utils";
 
 // import components
-@use 'scss/components/header'
+@use "scss/components/header";
+
+//import modal
+@use "scss/components/modal";
