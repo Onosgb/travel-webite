@@ -11,5 +11,6 @@
     height: auto;
     padding: 2rem;
     font-size: 1.4rem;
+    @include abs.animation(modalAnimate, 0.5s, linear, -10rem, 0);
   }
 }
