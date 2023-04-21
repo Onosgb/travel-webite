@@ -1,13 +1,12 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables";
+@use "../abstracts/index" as abs;
 
 .modal {
-  @include mixins.position(fixed, 0, 0, 0, 0, 100%, 100%);
-  @include mixins.align(flex, center, center, auto);
+  @include abs.position(fixed, 0, 0, 0, 0, 100%, 100%);
+  @include abs.align(flex, center, center, auto);
   background: rgb(0, 0, 0, 0.4);
 
   &__body {
-    background: variables.$white;
+    background: abs.$white;
     width: 38rem;
     height: auto;
     padding: 2rem;
