@@ -1,0 +1,7 @@
+@use "../abstracts/index" as *;
+
+.navLayer {
+  @include position(fixed, 0, 0, 0, 0, 100%, 100%);
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 3;
+}
